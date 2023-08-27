@@ -10,6 +10,7 @@ import {
 import article from 'data/article.json';
 import data from 'data/data.json';
 
+import transactions from 'data/transactions.json';
 export const App = () => {
   return (
     <Section>
@@ -31,7 +32,7 @@ export const App = () => {
           Task 2
         </Heading>
         <Statistics title="Main Statistics" stats={data} />
-                <Statistics stats={data} />
+        <Statistics stats={data} />
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
@@ -39,7 +40,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
-        <CryptoHistory />
+        <CryptoHistory items={transactions} />
       </Container>
     </Section>
   );
